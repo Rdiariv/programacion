@@ -33,6 +33,10 @@ public class Ejercicio6 {
 		
 		//calculo el cociente estableciendo dos decimales e inicializo la
 		//variable cociente con el resultado
+		/*
+		 * Manera alternativa a la dada en los apuntes para el redondeo a dos
+		 * decimales.
+		 */
 		cociente=(float)(Math.round((num1/num2)*100d)/100d);
 		
 		//imprimo en pantalla el valor obtenido

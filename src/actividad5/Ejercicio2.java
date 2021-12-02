@@ -3,6 +3,7 @@
  */
 package actividad5;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /**
@@ -35,10 +36,15 @@ public class Ejercicio2 {
 		//inicializo variable area con el calculo del area
 		area=(float)(Math.PI*Math.pow(radio, 2));
 		
+		//establezco maximo de decimales
+		DecimalFormat df = new DecimalFormat(); 
+		df.setMaximumFractionDigits(3);
+		
 		//imprimo resultado en pantalla
-		System.out.println("El área del circulo de radio "+radio+" es "
-				+ Math.pow(radio, 2)+"\u03c0 unidades cuadradas.\n"+
-				"O lo que es lo mismo, " + area + " unidades cuadradas.");
+		System.out.printf("El área del circulo de radio "+radio+" es "
+				+ df.format(Math.pow(radio, 2))+" unidades cuadradas.\n"
+				+"O lo que es lo mismo, "+df.format(area)
+				+" unidades cuadradas.");
 	}
 
 }

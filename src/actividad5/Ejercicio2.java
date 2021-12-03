@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  * @author ruben
- * El programa pide el radio de un circulo y calcula su área
+ * El programa pide el radio de un circulo y calcula su área 
  * Input:
  * 			radio del circulo 
  * Output: 

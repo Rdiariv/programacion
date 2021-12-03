@@ -8,7 +8,7 @@ import java.util.Scanner;
 /**
  * @author ruben 
  *	El programa pide dos valores al usuario, realiza la división e imprime
- *	en vantalla el cociente obtenido con dos decimales
+ *	en vantalla el cociente obtenido con dos decimales 
  */
 public class Ejercicio6 {
 

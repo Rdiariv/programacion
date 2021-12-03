@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @author ruben
  * El programa pide el radio de un circulo y calcula su área
  * Input:
- * 			radio del circulo
+ * 			radio del circulo 
  * Output: 
  * 			área del circulo
  */
@@ -42,7 +42,7 @@ public class Ejercicio2 {
 		
 		//imprimo resultado en pantalla
 		System.out.printf("El área del circulo de radio "+radio+" es "
-				+ df.format(Math.pow(radio, 2))+" unidades cuadradas.\n"
+				+ df.format(Math.pow(radio, 2))+"\u03c0 unidades cuadradas.\n"
 				+"O lo que es lo mismo, "+df.format(area)
 				+" unidades cuadradas.");
 	}

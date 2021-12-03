@@ -6,7 +6,7 @@ package actividad5;
 import java.util.Scanner;
 
 /**
- * @author ruben
+ * @author ruben 
  *	El programa pide dos valores al usuario, realiza la división e imprime
  *	en vantalla el cociente obtenido con dos decimales
  */

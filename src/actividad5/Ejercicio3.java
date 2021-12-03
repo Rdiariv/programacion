@@ -5,7 +5,7 @@ package actividad5;
 import java.util.Scanner;
 /**
  * @author ruben
- *	El programa pide dos números e imprime el mayor de ellos.
+ *	El programa pide dos números e imprime el mayor de ellos. 
  */
 public class Ejercicio3 {
 

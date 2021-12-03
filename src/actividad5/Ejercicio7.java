@@ -4,7 +4,7 @@
 package actividad5;
 
 /**
- * @author ruben
+ * @author ruben 
  *	Programa que simula una partida de dados entre dos jugadores
  *	imprime en pantalla el resultado de cada lanzamiento y nos dice que valor
  *	es mayor

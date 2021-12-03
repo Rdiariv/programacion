@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 /**
  * @author ruben
- * El programa pide 2 números al usuario e imprime el menor de ellos
+ * El programa pide 2 números al usuario e imprime el menor de ellos 
  *
  */
 public class Ejercicio4 {

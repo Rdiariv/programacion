@@ -4,7 +4,7 @@
 package actividad5;
 
 /**
- * @author ruben
+ * @author ruben 
  *	El programa genera un número aleatorio entre 1 y 10 y lo imprime en pantalla
  */
 public class Ejercicio5 {

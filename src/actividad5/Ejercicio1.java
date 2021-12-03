@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @author ruben
  *	Programa que calcula el IMC 
  *	INPUT: 
- *			peso en kilogramos
+ *			peso en kilogramos 
  *			altura en metros
  * OUTPUT: 
  * 			IMC

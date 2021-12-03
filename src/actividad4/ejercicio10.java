@@ -8,7 +8,7 @@ import java.util.Scanner;
 /**
  * @author ruben
  * Al introducir un numero decimal el programa realiza un redondeo
- * en funcion del valor del primer decimal
+ * en funcion del valor del primer decimal 
  * 
  */
 public class ejercicio10 {

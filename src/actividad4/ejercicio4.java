@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @author ruben
  * El programa solicita al usuario su peso y altura y con estos valores calcula
  * el IMC.
- * Imprime en pantalla el valor del IMC y añade un comentario
+ * Imprime en pantalla el valor del IMC y añade un comentario 
  */
 public class ejercicio4 {
 

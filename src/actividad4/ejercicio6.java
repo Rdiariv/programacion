@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 /**
  * @author ruben
- * El programa solicita el valor en euros y devuelve el valor en dolares
+ * El programa solicita el valor en euros y devuelve el valor en dolares 
  *
  */
 public class ejercicio6 {

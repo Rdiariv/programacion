@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @author ruben
  * El programa pide al usuario una hora y una cantidad de horas y devuelve
  * la hora que marcará el reloj una vez pasadas esas horas
- */
+ */ 
 public class ejercicio8 {
 
 	/**

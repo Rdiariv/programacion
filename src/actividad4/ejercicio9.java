@@ -8,7 +8,7 @@ import java.util.Scanner;
 /**
  * @author ruben
  *	El programa devuelve la parte decimal de un número real que introduce el
- *	usuario
+ *	usuario 
  */
 public class ejercicio9 {
 

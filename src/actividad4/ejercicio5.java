@@ -6,7 +6,7 @@ package actividad4;
 import java.util.Scanner;
 
 /**
- * @author ruben
+ * @author ruben 
  *
  */
 public class ejercicio5 {

@@ -8,7 +8,7 @@ import java.util.Scanner;
  * El programa devuelve el valor del radio de una esfera a partir del valor
  * del diametro introducido por el usuario, en las mismas unidades
  * 
- * INPUT: valor del diametro
+ * INPUT: valor del diametro 
  * 
  * OUTPUT: valor del radio
  *

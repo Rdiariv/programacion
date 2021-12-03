@@ -11,7 +11,7 @@ import java.util.Scanner;
  * Temperatura en grados Fahrenheit introducida por el usuario
  * 
  * OUTPUT:
- * Temperatura en grados celsius
+ * Temperatura en grados celsius 
  * 
  * El programa pide al usuario por consola que introduzca un valor
  * de temperatura en grados Fahrenheit y devuelve la temperatura introducida en

@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 /**
  * @author ruben
- *	El programa solicita 3 valores al usuario y calcula la media
+ *	El programa solicita 3 valores al usuario y calcula la media 
  */
 public class ejercicio7 {
 

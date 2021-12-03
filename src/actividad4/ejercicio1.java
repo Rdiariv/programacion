@@ -8,7 +8,7 @@ import java.util.Scanner;
 /**
  * @author ruben
  * El programa pide al usuario que introduzca una temperatura en grados
- * celsius y devuelve esa temperatura en grados Fahrenheit 
+ * celsius y devuelve esa temperatura en grados Fahrenheit  
  */
 public class ejercicio1 {
 

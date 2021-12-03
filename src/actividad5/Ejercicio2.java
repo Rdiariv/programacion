@@ -42,7 +42,7 @@ public class Ejercicio2 {
 		
 		//imprimo resultado en pantalla
 		System.out.printf("El área del circulo de radio "+radio+" es "
-				+ df.format(Math.pow(radio, 2))+"\u03c0 unidades cuadradas.\n"
+				+ df.format(Math.pow(radio, 2))+"(\u03c0) unidades cuadradas.\n"
 				+"O lo que es lo mismo, "+df.format(area)
 				+" unidades cuadradas.");
 	}

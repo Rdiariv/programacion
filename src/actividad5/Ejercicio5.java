@@ -21,7 +21,7 @@ public class Ejercicio5 {
 		numero=(short)(Math.random()*10+1);
 		
 		//Imprimo el número en pantalla
-		System.out.println("El valor aleatorio ontenido es "+numero);
+		System.out.println("El valor aleatorio obtenido es "+numero);
 	
 	}
 

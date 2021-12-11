@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @author ruben
  * El programa genera un número aleatorio entre 1 y 100, ambos incluidos.
  * Pide al usuario que introduzca números hasta que acierta el número secreto
- * Al acertarlo imprime un mensaje en pantalla
+ * Al acertarlo imprime un mensaje en pantalla 
  *
  */
 public class Ejercicio1 {

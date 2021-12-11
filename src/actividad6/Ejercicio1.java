@@ -37,8 +37,8 @@ public class Ejercicio1 {
 			 * Solicito al jugador un número con el que inicializo la variable
 			 * entrada
 			 */
-			System.out.print("Intengo número " + (intentos+1) +
-					". Introduzca un número: ");
+			System.out.print("Intento " + (intentos+1) +
+					". Introduce un número: ");
 			
 			//Decide si el valor introducido es un short
 			if(sc.hasNextShort()==true)//si es short 

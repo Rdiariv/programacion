@@ -7,11 +7,9 @@ import java.util.Scanner;
 
 /**
  * @author ruben
- * El progama pide nota numerica al usuario e imprime en pantalla el valor
- * de la nota como texto
  *
  */
-public class Ejercicio5 {
+public class Ejercicio4 {
 
 	/**
 	 * @param args
@@ -55,17 +53,11 @@ public class Ejercicio5 {
 		 */
 		switch(nota)
 		{
-		case 0 ->	mensaje = "cero";
-		case 1 ->	mensaje = "uno";
-		case 2 ->	mensaje = "dos";
-		case 3 ->	mensaje = "tres";
-		case 4 -> 	mensaje = "cuatro";
-		case 5 -> 	mensaje	= "cinco";
-		case 6 -> 	mensaje	= "seis";
-		case 7 ->	mensaje	= "siete";
-		case 8 ->	mensaje	= "ocho";
-		case 9 ->	mensaje	= "nueve";
-		case 10 -> 	mensaje	= "diez";
+		case 0,1,2,3,4 -> mensaje = "insuficiente, muy mal";
+		case 5 -> mensaje="suficiente, que mala nota";
+		case 6 -> mensaje="bien";
+		case 7,8 ->	mensaje="notable";
+		case 9,10 -> mensaje="sobresaliente";
 		default ->	System.out.println("Valor no reconocido");
 		}
 		

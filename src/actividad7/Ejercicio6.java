@@ -18,59 +18,27 @@ public class Ejercicio6 {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		boolean interruptor=false;
-		int nota=0;
+		//declaro variables
+		double numero=0;
+		//Instancio clase scanner para capturar las entradas de teclado
 		Scanner sc = new Scanner(System.in);
 		
-		while(interruptor==false || nota>10 || nota<0)
-		{
-			System.out.println("Introduzca nota numérica ");
-			
-			if(sc.hasNextInt()==true)//si la entrada es valida
-			{
-				/*
-				 * Asigno valor introducido a nota
-				 * interruptor para cancelar el bucle while
-				 */
-				nota=sc.nextInt();
-				interruptor=true;
-			}
-			else
-			{
-				//Si no es entrada valida aviso al usuario
-				System.out.println("Entrada no válida");
-			}
-		
-			sc = new Scanner(System.in);
-		}
-		
-		sc.close(); //cierro entrada de consola
-		
-		//creo variable mensaje
-		String mensaje="";
-		
 		/*
-		 * el switch asigna un mensaje a la variable mensaje para imprimir
-		 * en pantalla en funcion de la nota numerica introducida
+		 * Mientras el numero sea mayor que cero pide nuevo numero e imprime
+		 * su raiz
 		 */
-		switch(nota)
+		while(numero>=0)
 		{
-		case 0 -> mensaje="cero";
-		case 1 -> mensaje="uno";
-		case 2 -> mensaje="dos";
-		case 3 -> mensaje="tres";
-		case 4 -> mensaje="cuatro";
-		case 5 -> mensaje="cinco";
-		case 6 -> mensaje="seis";
-		case 7 -> mensaje="siete";
-		case 8 -> mensaje="ocho";
-		case 9 -> mensaje="nueve";
-		case 10 -> mensaje="diez";
-		default ->	System.out.println("Valor no reconocido");
+			System.out.print("Introduzca un número:");
+			numero=sc.nextDouble();
+			
+			
+			System.out.println("La raíz de "+numero+" es "
+					+ (Math.sqrt(numero)));
 		}
 		
-		System.out.println("Has sacado un "+mensaje);
-
+		//cierro captura de consola
+		sc.close();
 	}
 
 }

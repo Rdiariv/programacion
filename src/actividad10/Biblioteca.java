@@ -28,33 +28,26 @@ public class Biblioteca{
 	 * con parámetros
 	 * Queria probar a hacer un array de objetos
 	 */
-	Libro[] biblio = new Libro[10]; //array de objetos Libro
-		
-	biblio[0]= new Libro("El Quijote de La Mancha", 
-				"Miguel de Cervantes", 2, 0);
-	biblio[1] = new Libro("El Capitán Alatriste", 
-				"Arturo Pérez Reverte", 1, 0);
-		
-
 	
+	Estanteria biblio = new Estanteria();
+
 	do
 	{
 		//imprimo menú interactivo para la biblioteca
 		
-		System.out.println("\nGestor de prestamos:"
-				+"\nPRESTAMOS:"
-				+"\n\t1)Prestar libro 1."
-				+"\n\t2)Prestar libro 2."
-				+"\nDEVOLUCIONES:"
-				+"\n\t3)Devolver libro 1."
-				+"\n\t4)Devolver libro 2."
-				+"\nCONSULTA:"
-				+"\n\t5)Consulta libro 1. (método toString superclase Object)"
-				+"\n\t6)Consulta libro 2. (método toString superclase Object)"
-				+"\n\t7)Consulta todo."
-				+"\n\n0)SALIR");
+			System.out.println("\nGestor de prestamos:"
+					+"\n\t1)Mostrar lista de libros."
+					+"\n\t2)Mostrar lista simplificada"
+					+"\n\t3)Prestar libro."
+					+"\n\t4)Devolver libro"
+					+"\n\t5)Consultar libro. (método toString superclase Object)"
+					+"\n\t6)Consultar libro."
+					+"\n\t7)Añadir libro a la biblioteca."
+					+"\n\t0)SALIR");
+			
+			System.out.print("Opción: ");
+			
 		
-		System.out.print("Opción: ");
 		
 		//me aseguro que la entrada del usuario sea un entero
 		if(sc.hasNextInt())
@@ -74,34 +67,59 @@ public class Biblioteca{
 		
 		switch(sel)
 		{
-			case 1:
-				biblio[0].prestamo();
-				biblio[0].imprime();
-			break;
-			case 2:
-				biblio[1].prestamo();
-				biblio[1].imprime();
+			//PEDIDO POR LA ACTIVIDAD
+			case 1://muestra lista de libros
+				imprimidor(biblio.array);
 			break;
 			
-			case 3:
-				biblio[0].devolucion();
-				biblio[0].imprime();
+			case 2: //muestra lista simple de libros
+				listaSimple(biblio.array, biblio.buscaHueco());
 			break;
+			
+			case 3: 
+				/*
+				 * Muestra lista simplificada y pide al usuario
+				 * que seleccione un libro
+				 * tras selecionarlo intenta realizar el prestamo
+				 */
+				System.out.println("Prestar libro:");
+				listaSimple(biblio.array, biblio.buscaHueco());
+				biblio.array[selecBook()].prestamo();
+			break;
+			
 			case 4:
-				biblio[1].devolucion();
-				biblio[1].imprime();
+				/*
+				 * Devolver libro
+				 */
+				System.out.println("Devolver libro:");
+				listaSimple(biblio.array, biblio.buscaHueco());
+				biblio.array[selecBook()].devolucion();
 			break;
 			
 			case 5:
-				System.out.println(biblio[0].toString());
-			break;
-			case 6:
-				System.out.println(biblio[1].toString());
+				/*
+				 * Consulta libro con el metodo toString de superclase object
+				 */
+				listaSimple(biblio.array, biblio.buscaHueco());
+				System.out.println(biblio.array[selecBook()].toString());
 			break;
 			
-			case 7 :
-				imprimidor(biblio);
+			case 6:
+				listaSimple(biblio.array, biblio.buscaHueco());
+				biblio.array[selecBook()].imprime();
+				
+				
 			break;
+			
+			case 7:
+				/*
+				 * añade libro a la biblioteca
+				 * utilizo el método addbook de la clase estanteria
+				 * utilizando por parametro el método buscaHueco de la misma
+				 * clase
+				 */
+				biblio.addbook(biblio.buscaHueco());
+			break; 
 			
 			case 0:
 				interruptor=false;
@@ -139,6 +157,38 @@ public class Biblioteca{
 			System.out.println("------------------------------------------");
 		}while(array[i]!=null);
 	}
+	
+	private static void listaSimple(Libro array[], int n)
+	{
+		
+		System.out.println("-----Lista de libros-----");
+		
+		for(int i=0; i<n; i++)
+		{
+			System.out.println((i+1)+") Titulo: "+array[i].titulo+"\t| "
+					+"Prestados/Disponibles: "+array[i].getNumeroEP()+"/"
+					+array[i].getNumeroE());
+		}
+		
+	}
+	
+	private static int selecBook()
+	{
+		int seleccion;
+		//me aseguro que la entrada sea un entero
+		do
+		{
+			
+			System.out.print("Seleccione libro:");
+			sc.nextLine();
+		}while(sc.hasNextInt()==false);
+		
+		seleccion=sc.nextInt();
+		
+		return seleccion-1;
+	}
+	
+	
 
 	// inicio objeto sc a nivel de clase para no tener que cerrarlo
 	private static final Scanner sc = new Scanner(System.in);

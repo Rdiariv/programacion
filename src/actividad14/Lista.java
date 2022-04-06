@@ -27,8 +27,7 @@ public class Lista {
 		/*Introduce los valores almacenados en el archivo CSV
 		 */
 		
-			String archivoCSV="/home/ruben/eclipse-workspace/programacion/src"
-					+ "/actividad14/entrada.csv" ;
+			String archivoCSV="datos/entrada.csv" ;
 			BufferedReader br=null;
 			String linea="";
 			String separador=",";
